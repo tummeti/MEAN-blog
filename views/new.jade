@@ -1,0 +1,13 @@
+extends layout
+a(href="/") Home
+br
+br
+block content
+    form(action="/new", method="POST")
+        input(name="title", width="90")
+        br
+        br
+        textarea(name="content", rows="15", cols="90")
+        br
+        br
+        input(type="Submit", value="Submit")
